@@ -1,0 +1,62 @@
+[
+  {
+    "id": 11,
+    "original_question": "Tobias is buying a new pair of shoes that costs $95. He has been saving up his money each month for the past three months. He gets a $5 allowance a month. He also mows lawns and shovels driveways. He charges $15 to mow a lawn and $7 to shovel. After buying the shoes, he has $15 in change. If he mows 4 lawns, how many driveways did he shovel?",
+    "original_answer": "5",
+    "retrieved_examples": [
+      "Alexis has a budget of $200 to buy clothes for a job interview. She spent $30 on a shirt, $46 on sui",
+      "Alexis is preparing for a job interview and has set aside a budget of $200 for a complete outfit. Sh",
+      "Alexis is preparing for a job interview and has set a budget of $200 for new business attire. She sp"
+    ],
+    "rag_guided_question": "Tobias has been saving for a new pair of shoes that costs $95. Over the last three months, he receives a $5 allowance each month and earns money by mowing lawns for $15 each and shoveling driveways for $7 each. After purchasing the shoes, he has $15 remaining. If he mows 4 lawns, how many driveways has he shoveled to reach his goal?",
+    "index_size_after": 32
+  },
+  {
+    "id": 12,
+    "original_question": "Randy has 60 mango trees on his farm. He also has 5 less than half as many coconut trees as mango trees. How many trees does Randy have in all on his farm?",
+    "original_answer": "85",
+    "retrieved_examples": [
+      "Mark has a small garden where he grows flowers of different colors. He planted 10 yellow flowers, an",
+      "Tobias has been saving for a new pair of shoes that costs $95. Over the last three months, he receiv",
+      "Mark is designing a colorful flower garden in his backyard. He has planted 10 yellow flowers, and he"
+    ],
+    "rag_guided_question": "Randy runs a fruit farm where he cultivates mango trees and coconut trees. Currently, he has 60 mango trees. Additionally, he has 5 less than half the number of coconut trees compared to his mango trees. How many trees does Randy have altogether on his farm?",
+    "index_size_after": 33
+  },
+  {
+    "id": 13,
+    "original_question": "Jasper will serve charcuterie at his dinner party. He buys 2 pounds of cheddar cheese for $10, a pound of cream cheese that cost half the price of the cheddar cheese, and a pack of cold cuts that cost twice the price of the cheddar cheese. How much does he spend on the ingredients?",
+    "original_answer": "35",
+    "retrieved_examples": [
+      "Alexis has a budget of $200 to buy clothes for a job interview. She spent $30 on a shirt, $46 on sui",
+      "Alexis is preparing for a job interview and has set aside a budget of $200 for a complete outfit. Sh",
+      "Alexis is preparing for a job interview and has set a budget of $200 for new business attire. She sp"
+    ],
+    "rag_guided_question": "Jasper is planning a dinner party and decides to serve a charcuterie board. He purchases 2 pounds of cheddar cheese for $10, a pound of cream cheese that costs half the price of the cheddar cheese, and a pack of cold cuts that costs twice the price of the cheddar cheese. After making these purchases, how much does Jasper spend on all the ingredients for his charcuterie board?",
+    "index_size_after": 34
+  },
+  {
+    "id": 14,
+    "original_question": "Joy can read 8 pages of a book in 20 minutes. How many hours will it take her to read 120 pages?",
+    "original_answer": "5",
+    "retrieved_examples": [
+      "Samantha has a 120-page novel she wants to finish this week. Yesterday, she managed to read 12 pages",
+      "Liam is reading a 120-page comic book. Yesterday, he managed to read 12 pages, and today he read twi",
+      "Emily is working on a research project that involves a 120-page report. Yesterday, she managed to re"
+    ],
+    "rag_guided_question": "Joy is preparing for a book club meeting and wants to finish a 120-page book. She can read 8 pages in 20 minutes. If she dedicates her evenings to reading, how many hours will it take her to complete the entire book before the meeting?",
+    "index_size_after": 35
+  },
+  {
+    "id": 15,
+    "original_question": "James creates a media empire.  He creates a movie for $2000.  Each DVD cost $6 to make.  He sells it for 2.5 times that much.  He sells 500 movies a day for 5 days a week.  How much profit does he make in 20 weeks?",
+    "original_answer": "448000",
+    "retrieved_examples": [
+      "Tina is a graphic designer who earns $18.00 for every hour she works. If she puts in more than 8 hou",
+      "Tobias has been saving for a new pair of shoes that costs $95. Over the last three months, he receiv",
+      "Tina earns $18.00 an hour at her job. When she works more than 8 hours in a day, she receives overti"
+    ],
+    "rag_guided_question": "James is an independent filmmaker who creates a new movie for $2,000. Each DVD costs him $6 to produce, and he sells each one for 2.5 times the production cost. This week, he sells 500 DVDs each day for 5 consecutive days. After 20 weeks of selling, what is the total profit he makes from his movie?",
+    "index_size_after": 36
+  }
+]

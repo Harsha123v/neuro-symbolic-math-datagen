@@ -1,0 +1,202 @@
+[
+  {
+    "id": 0,
+    "original_question": "Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?",
+    "original_answer": "72",
+    "symbolic_form": "{\n    \"variables\": {\"april_count\": \"int\", \"may_count\": \"int\", \"total\": \"int\"},\n    \"constraints\": [\"april_count == 48\", \"may_count == april_count / 2\", \"total == april_count + may_count\"],\n    \"goal\": \"total\"\n}",
+    "versions": {
+      "original": {
+        "question": "In April, Natalia decided to sell colorful clips to her friends and successfully sold them to 48 of her buddies. In May, she managed to sell half as many clips as she did in April. If you combine the number of clips sold in both months, how many clips did Natalia sell in total?",
+        "answer": "72"
+      },
+      "simplified": {
+        "question": "In April, Natalia sold 48 clips to her friends. The following month, in May, she sold half as many clips as she did in April. How many clips did Natalia sell in total during April and May?",
+        "answer": "72"
+      },
+      "complicated": {
+        "question": "In April, Natalia organized a craft sale and successfully sold clips to 48 of her friends. The following month, she decided to promote her clips further and sold half as many as she did in April. If we let C represent the total number of clips she sold in April along with the clips sold in May, how many clips has Natalia sold in total over these two months?",
+        "answer": "72"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "original_question": "Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?",
+    "original_answer": "10",
+    "symbolic_form": "{\n    \"variables\": {\"rate\": \"real\", \"time\": \"real\", \"amount\": \"real\"},\n    \"constraints\": [\"rate == 12\", \"time == 50 / 60\", \"amount == rate * time\"],\n    \"goal\": \"amount\"\n}",
+    "versions": {
+      "original": {
+        "question": "Weng babysits children and makes $12 for every hour she works. Yesterday, she watched the kids for a little under an hour, completing 50 minutes of babysitting. Can you calculate how much she earned for her time spent with the children?",
+        "answer": "10"
+      },
+      "simplified": {
+        "question": "Lily earns $12 an hour for dog walking. Yesterday, she walked dogs for 50 minutes. How much money did she make for her work?",
+        "answer": "10"
+      },
+      "complicated": {
+        "question": "Weng is a babysitter who earns $12 an hour for her services. Yesterday, she babysat for a family that needed her help for 50 minutes while they ran errands. To make things more interesting, she also helped them prepare some snacks, which they valued at $5. How much did Weng earn in total for her time spent babysitting and preparing the snacks?",
+        "answer": "10"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "original_question": "Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?",
+    "original_answer": "5",
+    "symbolic_form": "{\n    \"variables\": {\"total\": \"real\", \"cost\": \"int\", \"parents_gift\": \"int\", \"grandparents_gift\": \"int\", \"needed\": \"real\"},\n    \"constraints\": [\"total = 100\", \"amount = total / 2\", \"parents_gift = 15\", \"grandparents_gift = 2 * parents_gift\", \"needed = total - (amount + parents_gift + grandparents_gift)\"],\n    \"goal\": \"needed\"\n}",
+    "versions": {
+      "original": {
+        "question": "Betty wants to buy a new wallet that costs $100. She currently has only half of the money she needs saved up. Her parents decided to give her $15 to help her reach her goal, and her grandparents contributed twice that amount. How much more money does Betty need to purchase the wallet?",
+        "answer": "5"
+      },
+      "simplified": {
+        "question": "Betty wants to buy a new wallet that costs $100. She currently has $50 saved up. Her parents are giving her $15, and her grandparents will give her twice that amount. How much more money does Betty need to buy the wallet?",
+        "answer": "5"
+      },
+      "complicated": {
+        "question": "Betty is excited about buying a new wallet that costs $100, but she currently only has half of that amount saved up. To help her reach her goal, her parents decide to give her $15, while her grandparents generously contribute twice the amount her parents gave. How much more money does Betty need to save in order to afford the wallet?",
+        "answer": "5"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "original_question": "Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?",
+    "original_answer": "42",
+    "symbolic_form": "{\n    \"variables\": {\"total\": \"int\", \"yesterday\": \"int\", \"today\": \"int\", \"remaining\": \"int\", \"tomorrow\": \"int\"},\n    \"constraints\": [\"total == 120\", \"yesterday == 12\", \"today == 2 * yesterday\", \"remaining == total - yesterday - today\", \"tomorrow == remaining / 2\"],\n    \"goal\": \"tomorrow\"\n}",
+    "versions": {
+      "original": {
+        "question": "Samantha has a 120-page novel she wants to finish this week. Yesterday, she managed to read 12 pages, and today she read twice as many as she did yesterday. If she plans to read half of the remaining pages tomorrow, how many pages will she need to read?",
+        "answer": "42"
+      },
+      "simplified": {
+        "question": "Liam is reading a 120-page comic book. Yesterday, he managed to read 12 pages, and today he read twice as many pages as he did yesterday. If he plans to read half of the pages that are left tomorrow, how many pages does he need to read?",
+        "answer": "42"
+      },
+      "complicated": {
+        "question": "Emily is working on a research project that involves a 120-page report. Yesterday, she managed to review 12 pages, and today, she delved into the material even deeper, reviewing twice as many pages as she did yesterday. If she plans to cover half of the remaining pages tomorrow, how many pages will she need to read?",
+        "answer": "42"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "original_question": "James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?",
+    "original_answer": "624",
+    "symbolic_form": "{\n    \"variables\": {\"pages_per_letter\": \"int\", \"letters_per_week\": \"int\", \"weeks_per_year\": \"int\", \"total_pages\": \"int\"},\n    \"constraints\": [\"pages_per_letter == 3\", \"letters_per_week == 2\", \"weeks_per_year == 52\"],\n    \"goal\": \"total_pages\"\n}",
+    "versions": {
+      "original": {
+        "question": "Every week, Maria sits down to write a heartfelt letter to two of her closest friends, crafting 3 pages for each friend. She dedicates this time twice a week to connect with them through her words. If she continues this routine throughout the entire year, how many pages will she have written by the end of the year?",
+        "answer": "624"
+      },
+      "simplified": {
+        "question": "Emily enjoys writing letters. She sends a 2-page letter to 3 different friends every week. How many pages does she write in a year?",
+        "answer": "624"
+      },
+      "complicated": {
+        "question": "James enjoys keeping in touch with his two friends, so he writes a 3-page letter to each of them twice a week. If he spends an extra hour crafting thoughtful responses and has a total of 52 weeks in the year, how many pages does he end up writing to his friends throughout the year?",
+        "answer": "624"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "original_question": "Mark has a garden with flowers. He planted plants of three different colors in it. Ten of them are yellow, and there are 80% more of those in purple. There are only 25% as many green flowers as there are yellow and purple flowers. How many flowers does Mark have in his garden?",
+    "original_answer": "35",
+    "symbolic_form": "{\n    \"variables\": {\n        \"yellow\": \"int\",\n        \"purple\": \"int\",\n        \"green\": \"int\",\n        \"total\": \"int\"\n    },\n    \"constraints\": [\n        \"yellow == 10\",\n        \"purple == yellow * 1.8\",\n        \"green == (yellow + purple) * 0.25\",\n        \"total == yellow + purple + green\"\n    ],\n    \"goal\": \"total\"\n}",
+    "versions": {
+      "original": {
+        "question": "Mark is designing a colorful flower garden in his backyard. He has planted 10 yellow flowers, and he has 80% more purple flowers than there are yellow ones. In addition, he has only 25% as many green flowers as the total of his yellow and purple flowers combined. How many flowers does Mark have in his garden altogether?",
+        "answer": "35"
+      },
+      "simplified": {
+        "question": "Mark has a small garden where he grows flowers of different colors. He planted 10 yellow flowers, and the number of purple flowers is 80% more than that. Additionally, there are only 25% as many green flowers as there are yellow and purple flowers combined. How many flowers does Mark have in total in his garden?",
+        "answer": "35"
+      },
+      "complicated": {
+        "question": "Mark is an avid gardener who enjoys tending to his flower beds. He has planted 10 bright yellow flowers, and he discovered that the number of purple flowers he planted is 80% more than the yellow ones. Additionally, there are only 25% as many green flowers as there are combined yellow and purple flowers. Can you determine the total number of flowers in Mark's garden?",
+        "answer": "35"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "original_question": "Albert is wondering how much pizza he can eat in one day. He buys 2 large pizzas and 2 small pizzas. A large pizza has 16 slices and a small pizza has 8 slices. If he eats it all, how many pieces does he eat that day?",
+    "original_answer": "48",
+    "symbolic_form": "{\n    \"variables\": {\"large_pizzas\": \"int\", \"small_pizzas\": \"int\", \"slices_per_large\": \"int\", \"slices_per_small\": \"int\", \"total_slices\": \"int\"},\n    \"constraints\": [\"large_pizzas == 2\", \"small_pizzas == 2\", \"slices_per_large == 16\", \"slices_per_small == 8\", \"total_slices == (large_pizzas * slices_per_large) + (small_pizzas * slices_per_small)\"],\n    \"goal\": \"total_slices\"\n}",
+    "versions": {
+      "original": {
+        "question": "Albert is hosting a pizza party and decides to buy a total of 2 large pizzas and 2 small pizzas for his friends. Each large pizza contains 16 slices, while each small pizza has 8 slices. If Albert plans to eat all the pizza himself, how many slices of pizza will he consume throughout the day?",
+        "answer": "48"
+      },
+      "simplified": {
+        "question": "Albert is planning a pizza party and decides to buy 2 large pizzas and 2 small pizzas for his friends. Each large pizza has 16 slices, while each small pizza has 8 slices. If Albert plans to eat all the pizza himself, how many slices will he enjoy that day?",
+        "answer": "48"
+      },
+      "complicated": {
+        "question": "Albert is hosting a movie marathon for his friends and decides to order pizza for the occasion. He orders 2 large pizzas, each cut into 16 slices, and 2 small pizzas, each cut into 8 slices. Additionally, he plans to save a few slices for himself the next day and wonders how many total slices he will have available if he shares everything with his friends. If all the pizzas are eaten, how many slices will Albert and his friends consume together?",
+        "answer": "48"
+      }
+    }
+  },
+  {
+    "id": 7,
+    "original_question": "Ken created a care package to send to his brother, who was away at boarding school.  Ken placed a box on a scale, and then he poured into the box enough jelly beans to bring the weight to 2 pounds.  Then, he added enough brownies to cause the weight to triple.  Next, he added another 2 pounds of jelly beans.  And finally, he added enough gummy worms to double the weight once again.  What was the final weight of the box of goodies, in pounds?",
+    "original_answer": "16",
+    "symbolic_form": "{\n    \"variables\": {\"initial_weight\": \"real\", \"jelly_beans_weight\": \"real\", \"brownies_weight\": \"real\", \"gummy_worms_weight\": \"real\", \"total_weight\": \"real\"},\n    \"constraints\": [\n        \"initial_weight + jelly_beans_weight = 2\",\n        \"total_weight = (initial_weight + jelly_beans_weight) * 3\",\n        \"jelly_beans_weight += 2\",\n        \"total_weight = (initial_weight + jelly_beans_weight + brownies_weight) * 2\"\n    ],\n    \"goal\": \"total_weight\"\n}",
+    "versions": {
+      "original": {
+        "question": "Emma decided to send a care package to her sister who is studying abroad. She started by placing an empty box on a scale and then added enough chocolate chip cookies to make the total weight 2 pounds. After that, she included enough slices of cake to triple the weight of the box. Next, Emma added another 2 pounds of cookies and finally, she topped it off with enough candy to double the overall weight once again. What is the final weight of the box of treats, in pounds?",
+        "answer": "16"
+      },
+      "simplified": {
+        "question": "Maria is preparing a package for her friend in college. She started by adding enough snacks to make the package weigh 2 pounds. Then, she added more treats that made the weight increase to 6 pounds, followed by adding another 2 pounds of snacks. Finally, she added some candy that doubled the total weight of the package. What is the final weight of Maria's package in pounds?",
+        "answer": "16"
+      },
+      "complicated": {
+        "question": "Emma decided to surprise her friend at college by sending a special care package. She started by weighing an empty box on a scale and poured enough jelly beans into it to reach a total weight of 2 pounds. After that, she added enough brownies to triple the weight of the box. To make it even sweeter, she then included another 2 pounds of jelly beans, followed by a final addition that doubled the weight once again. What was the total weight of the care package when Emma finished?",
+        "answer": "16"
+      }
+    }
+  },
+  {
+    "id": 8,
+    "original_question": "Alexis is applying for a new job and bought a new set of business clothes to wear to the interview. She went to a department store with a budget of $200 and spent $30 on a button-up shirt, $46 on suit pants, $38 on a suit coat, $11 on socks, and $18 on a belt. She also purchased a pair of shoes, but lost the receipt for them. She has $16 left from her budget. How much did Alexis pay for the shoes?",
+    "original_answer": "41",
+    "symbolic_form": "{\n    \"variables\": {\n        \"total\": \"int\",\n        \"budget\": \"int\",\n        \"shirt\": \"int\",\n        \"pants\": \"int\",\n        \"coat\": \"int\",\n        \"socks\": \"int\",\n        \"belt\": \"int\",\n        \"shoes\": \"int\",\n        \"remaining\": \"int\"\n    },\n    \"constraints\": [\n        \"total = shirt + pants + coat + socks + belt + shoes\",\n        \"budget = 200\",\n        \"shirt = 30\",\n        \"pants = 46\",\n        \"coat = 38\",\n        \"socks = 11\",\n        \"belt = 18\",\n        \"remaining = budget - total\",\n        \"remaining = 16\"\n    ],\n    \"goal\": \"shoes\"\n}",
+    "versions": {
+      "original": {
+        "question": "Alexis is preparing for a job interview and has set aside a budget of $200 for a complete outfit. She bought a button-up shirt for $30, suit pants for $46, a suit coat for $38, socks for $11, and a belt for $18. After making these purchases, she realizes she has $16 left from her budget. How much did she spend on the shoes she bought?",
+        "answer": "41"
+      },
+      "simplified": {
+        "question": "Alexis has a budget of $200 to buy clothes for a job interview. She spent $30 on a shirt, $46 on suit pants, $38 on a suit coat, $11 on socks, and $18 on a belt. After these purchases, she has $16 left. How much did she pay for the shoes she bought?",
+        "answer": "41"
+      },
+      "complicated": {
+        "question": "Alexis is preparing for a job interview and has set a budget of $200 for new business attire. She spent $30 on a button-up shirt, $46 on suit pants, $38 on a suit coat, $11 on socks, and $18 on a belt. After accounting for these purchases, she found that she had $16 remaining from her budget. If she lost the receipt for the shoes she purchased, how much did she pay for them?",
+        "answer": "41"
+      }
+    }
+  },
+  {
+    "id": 9,
+    "original_question": "Tina makes $18.00 an hour.  If she works more than 8 hours per shift, she is eligible for overtime, which is paid by your hourly wage + 1/2 your hourly wage.  If she works 10 hours every day for 5 days, how much money does she make?",
+    "original_answer": "990",
+    "symbolic_form": "{\n    \"variables\": {\"hours_worked\": \"int\", \"hourly_rate\": \"real\", \"overtime_rate\": \"real\", \"overtime_hours\": \"int\", \"total_payment\": \"real\"},\n    \"constraints\": [\"hours_worked > 8\", \"hourly_rate = 18.0\", \"overtime_rate = hourly_rate + (0.5 * hourly_rate)\", \"overtime_hours = hours_worked - 8\", \"total_payment = (hourly_rate * 8) + (overtime_rate * overtime_hours)\"],\n    \"goal\": \"total_payment\"\n}",
+    "versions": {
+      "original": {
+        "question": "Tina is a graphic designer who earns $18.00 for every hour she works. If she puts in more than 8 hours in a single day, she qualifies for overtime pay, which is calculated at her regular hourly wage plus an additional half of her hourly wage. This week, Tina worked 10 hours each day for 5 days straight. How much money did she make in total for the week?",
+        "answer": "990"
+      },
+      "simplified": {
+        "question": "Tina earns $18.00 an hour at her job. When she works more than 8 hours in a day, she receives overtime pay, which is her regular pay plus half of her hourly rate. If Tina works 10 hours each day for a week, how much total money does she earn?",
+        "answer": "990"
+      },
+      "complicated": {
+        "question": "Tina works as a graphic designer and earns $18.00 an hour. For every hour worked beyond her regular 8-hour shift, she qualifies for overtime pay, which includes her regular hourly wage plus an additional half of that wage. If she works 10 hours each day for a full 5-day work week, how much will she earn in total for the week?",
+        "answer": "990"
+      }
+    }
+  }
+]
